@@ -1,0 +1,2 @@
+# Game of War
+This card game uses the Deck of Cards API to fetch random cards out of the deck. Those cards are then displayed in the two slots that I've created for them. To play, you first click on the 'New Deck' button to retrieve the deck of cards and then click 'Draw 🃏' to display the computer's and your card. The higher card wins and a point is given to the winner. When the deck runs out of cards, the final winner is based on who has more points. It was a fun app to make with plain JS.
