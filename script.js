@@ -10,7 +10,11 @@ const computerScore = document.getElementById("computer-score")
 const myScore = document.getElementById("my-score")
 
 function handleClick() {
+<<<<<<< HEAD
     fetch("https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1")
+=======
+    fetch("https://deckofcardsapi.com/api/deck/new/shuffle/")
+>>>>>>> 9990d6cbe37f92d94387c5b1f4a04851cf86296f
         .then(res => res.json())
         .then(data => {
           cardsLeft.textContent = `Cards Left: ${data.remaining}`
@@ -25,7 +29,11 @@ function handleClick() {
 }
 
 function drawCard() {
+<<<<<<< HEAD
     fetch(`https://deckofcardsapi.com/api/deck/${deckId}/draw/?count=2`)
+=======
+    fetch(`https://deckofcardsapi.com/deck/${deckId}/draw/?count=2`)
+>>>>>>> 9990d6cbe37f92d94387c5b1f4a04851cf86296f
         .then(res => res.json())
         .then(data => {
           cardsLeft.textContent = `Cards Left: ${data.remaining}`
