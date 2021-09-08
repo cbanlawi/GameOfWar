@@ -10,7 +10,7 @@ const computerScore = document.getElementById("computer-score")
 const myScore = document.getElementById("my-score")
 
 function handleClick() {
-    fetch("https://apis.scrimba.com/deckofcards/api/deck/new/shuffle/")
+    fetch("https://deckofcardsapi.com/api/deck/new/shuffle/")
         .then(res => res.json())
         .then(data => {
           cardsLeft.textContent = `Cards Left: ${data.remaining}`
@@ -25,7 +25,7 @@ function handleClick() {
 }
 
 function drawCard() {
-    fetch(`https://apis.scrimba.com/deckofcards/api/deck/${deckId}/draw/?count=2`)
+    fetch(`https://deckofcardsapi.com/deck/${deckId}/draw/?count=2`)
         .then(res => res.json())
         .then(data => {
           cardsLeft.textContent = `Cards Left: ${data.remaining}`
